@@ -18,10 +18,7 @@ app.post("/api/v1/details", (req, res) => {
   //validate
 
   if (!name || !mail || !number) {
-    return res.status(400).json({
-      status: 'Error',
-      message: 'Incomplete user details. Please provide name, mail and number.'
-    })
+    return
   }
   //generate new id
 
